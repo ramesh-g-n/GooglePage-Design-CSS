@@ -1,0 +1,141 @@
+<html>
+<title>GooglePage</title>
+<head>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'arial', sans-serif;
+        }
+       section{
+           position: relative;
+           width:100%;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           min-height: 100vh;
+       }
+       section header{
+           position:absolute;
+           width:100%;
+           display:flex;
+           justify-content: flex-end;
+           top:0;
+           padding: 20px;
+       }
+       section header ul{
+           display: flex;
+           align-items: center;
+           justify-content: center;
+       }
+       section header ul li{
+           list-style: none;
+           margin-left: 20px;
+       }
+       section header ul li a{
+           font-size: 13px;
+           text-decoration: none;
+           color: #111;
+       }
+       section header ul li a img{
+            border-radius: 15px;
+       }
+       section .main{
+           width:580px;
+           display: flex;
+           flex-direction: column;
+           /* flex-direction: column-reverse; */
+           align-items: center;
+           justify-content: center;
+       }
+       section .main .search-box{
+           position: relative;
+           width:100%;
+           margin-top: 20px;
+       }
+       section .main .search-box .search{
+           width:100%;
+           padding:13px;
+           padding-left: 45px;
+           padding-right: 60px;
+           border-radius: 30px;
+           border: 1px solid #ccc;
+       }
+       section .main .search-box .icons{
+           position: absolute;
+           top:0;
+           width:100%;
+           display: flex;
+           padding:12px;
+           justify-content: space-between;
+           pointer-events: none;
+       }
+       section .main .buttons{
+           margin-top:20px
+       }
+       section .main .buttons button{
+           margin:0 5px;
+           padding:12px 20px;
+           color:#555;
+           font-size: 14px;
+           border:none;
+           cursor: pointer;
+           border-radius: 4px;  
+           border: 1px solid transparent;
+       }
+       section .main .languages{
+           display: flex;
+           margin-top: 30px;
+       }
+       section .main .languages li{
+           list-style: none;
+           font-size: 13px;
+           margin:0 5px;
+       }
+       section .main .languages li a{
+           text-decoration: none;
+           color:#1a0dad;
+       }
+    </style>
+</head>
+<body>
+    <section>
+        <header>
+            <ul>
+                <li><a href="#">Gmail</a></li>
+                <li><a href="#">Images</a></li>
+                <li><a href="#"><img src="bars.svg" /></a></li>
+                <li><a href="#"><img src="img.jpg" /> </a></li>
+            </ul>
+        </header>
+
+        <div class="main">
+            <img src="google_logo.svg" alt="Google image">
+            <div class="search-box">
+                <input type="text" class="search" placeholder="Search Google or type a URL">
+                <div class="icons">
+                    <div><img src="search.svg"></div>
+                    <div><img src="mic.svg"></div>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <button>Google Search</button>
+                <button>I'm Feeling Lucky</button>
+            </div>
+
+            <ul class="languages">
+                <li>Google Offered in:</li>
+                <li><a href="#">Kannada</a></li>
+                <li><a href="#">English</a></li>
+                <li><a href="#">Hindi</a></li>
+                <li><a href="#">Marati</a></li>
+                <li><a href="#">Tamil</a></li>
+                <li><a href="#">Telugu</a></li>
+            </ul>
+        </div>
+    </section>
+
+</body>
+</html>
